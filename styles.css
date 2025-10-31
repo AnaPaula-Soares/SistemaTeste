@@ -1,0 +1,82 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #22c55e;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --border: #374151;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+h1 {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 6px; }
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0b1220;
+  color: var(--text);
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+.radio-group { display: flex; gap: 16px; }
+.termos a { color: #60a5fa; text-decoration: none; }
+.termos a:hover { text-decoration: underline; }
+.forca-container { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+meter {
+  width: 160px;
+  height: 12px;
+}
+.erro {
+  color: var(--danger);
+  font-size: 12px;
+  min-height: 16px;
+  display: block;
+}
+.sucesso {
+  color: var(--primary);
+  font-size: 14px;
+  margin-top: 8px;
+}
+.actions { display: flex; gap: 12px; margin-top: 16px; }
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.preview { margin-top: 8px; }
